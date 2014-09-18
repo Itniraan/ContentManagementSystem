@@ -1,0 +1,159 @@
+/* 
+    Document   : styles
+    Created on : 17-Mar-2014, 9:29:47 AM
+    Author     : Blake Murdock (200260568)
+    Description:
+        CSS for Assignment 2, Semester 02, Winter 2014, COMP 1006
+*/
+
+root { 
+    display: block;
+}
+div#content {
+    background-color: white;
+    padding: 5%;
+    margin: 3%;
+    border: 10px ridge blue;
+}
+
+div#index {
+    background-color: white;
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 10px ridge blue;
+}
+div#control {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    border: 10px ridge blue;
+}
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2a59ab;
+}
+nav ul {
+    text-align: center;
+    /* Turn off list markers */
+    list-style-type: none;
+    /* Disable space around lists */
+    /* Turn off outside padding */
+    padding: 0;
+    /* Turn off margins */
+    margin: 0;
+    overflow:hidden;
+
+    
+}
+
+nav li {
+
+    /* Arrange along top of screen */
+    display:inline-block;
+    background-color: white;
+
+}
+
+nav a {
+    /*background: white;*/
+    display: block;
+    padding: 0.5em;
+    border:0em;
+    text-align:center;
+    font-family: Georgia, serif;
+}
+/* Link Interaction */
+nav a:link {
+    background: white;
+    color: black;
+}
+nav a:visited {
+    /*background: grey;*/
+    color: black;
+}
+nav a:focus {
+    background: lightblue;
+}
+nav a:hover {
+    background: blue;
+}
+nav a:active {
+    background: red;
+}
+nav li ul {
+    /* Hide secondary lists */
+    position: absolute;
+    left: -9999px;
+}
+/* Capture the child ul of the li that is being moused over */
+nav li:hover ul{
+    left: auto;
+}
+
+label,
+textarea {
+  display:inline-block;
+  vertical-align:top;
+}
+
+div {
+    padding-top:1%;
+}
+
+body {
+    margin-left:5%;
+    margin-right:5%;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, #BDC0F0),
+	color-stop(1, #2A3EF7)
+);
+background-image: -o-linear-gradient(top, #BDC0F0 25%, #2A3EF7 100%);
+background-image: -moz-linear-gradient(top, #BDC0F0 25%, #2A3EF7 100%);
+background-image: -webkit-linear-gradient(top, #BDC0F0 25%, #2A3EF7 100%);
+background-image: -ms-linear-gradient(top, #BDC0F0 25%, #2A3EF7 100%);
+background-image: linear-gradient(top, #BDC0F0 25%, #2A3EF7 100%);
+}
+
+footer {
+    margin-top: 10%;
+}
+
+echo, h1 {
+    text-align: center;
+}
+
+echo, h1#content {
+    margin-top: -3%;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+echo, p {
+    padding-left: 10%;
+    padding-right: 10%;
+    word-wrap: break-word;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+echo, li.nav, a.nav {
+    border: 2px solid black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: white;
+}
